@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Project.css" />
+    <script
+      src="https://kit.fontawesome.com/0345ad1360.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="cloud">
+        <h1 id="currentCity"></h1>
+
+        <img
+          src="Images/location.png"
+          alt="locationicon"
+          class="locationIcon"
+        />
+        <p id="today-time"></p>
+        <h4 class="todayIs">
+          Cloudy ☁️
+        </h4>
+        <div class="weather">
+          Temp: <span class="bigLetters"> 20</span
+          ><sup class="units">
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a>
+          </sup>
+          <br />
+          Wind:
+          <span class="wind"> 3 km/h </span><br />
+          Humidity:
+          <span class="humidity">
+            30 %
+          </span>
+        </div>
+        <br />
+
+        <!-- Search for a city function -->
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a City..."
+            autofocus="on"
+            autocomplete="off"
+            id="search-input"
+          />
+          <input type="submit" value="Search" id="searchCity" />
+        </form>
+        <br />
+      </div>
+    </div>
+
+    <!--  Weekdays -->
+    <div class="forcast">
+      <div class="wrapper">
+        <div class="week">
+          <h3>Sat</h3>
+          <p>
+            <span class="bigLetters"> 21</span><sup>o</sup
+            ><sub class="smallLetters">9</sub><span class="littleO">o</span>
+            <br />
+            <br /><i class="fas fa-sun fa-spin"></i>
+          </p>
+        </div>
+        <div class="week">
+          <h3>Sun</h3>
+          <p>
+            <span class="bigLetters"> 21</span><sup>o</sup
+            ><sub class="smallLetters">9</sub><span class="littleO">o</span>
+            <br /><br /><i class="fas fa-cloud-sun"></i>
+          </p>
+        </div>
+        <div class="week">
+          <h3>Mon</h3>
+          <p>
+            <span class="bigLetters"> 21</span><sup>o</sup
+            ><sub class="smallLetters">9</sub><span class="littleO">o</span>
+            <br />
+            <br /><i class="fas fa-sun fa-spin"></i>
+          </p>
+        </div>
+        <div class="week">
+          <h3>Tue</h3>
+          <p>
+            <span class="bigLetters"> 21</span><sup>o</sup
+            ><sub class="smallLetters">9</sub><span class="littleO">o</span>
+            <br /><br /><i class="fas fa-cloud-sun-rain"></i>
+          </p>
+        </div>
+        <div class="week">
+          <h3>Wed</h3>
+          <p>
+            <span class="bigLetters"> 21</span><sup>o</sup
+            ><sub class="smallLetters">9</sub><span class="littleO">o</span>
+            <br /><br />
+            <i class="fas fa-cloud-sun"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p class="madeBy">Hosted by Netlify<strong>By</strong> Helene J. Belling</p>
+    <a>Github </a>
+  </body>
+</html>
+<script src="Project.js"></script>
